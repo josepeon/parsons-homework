@@ -2,6 +2,7 @@ export interface Slide {
   title: string;
   content: string;
   image?: string;
+  aspectRatio?: number;
 }
 
 export interface Prompt {

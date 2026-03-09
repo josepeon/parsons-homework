@@ -308,7 +308,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
             {current.image && (
               <div
                 className="slide-image slide-animate rounded-[1vw] overflow-hidden relative flex-shrink-0"
-                style={{ width: '40%', height: '70%', visibility: 'hidden', opacity: 0 }}
+                style={{ width: '35%', aspectRatio: current.aspectRatio ?? 3 / 4, maxHeight: '75vh', visibility: 'hidden', opacity: 0 }}
               >
                 <img src={current.image} alt={current.title} className="w-full h-full object-cover" />
               </div>
