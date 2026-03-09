@@ -195,26 +195,50 @@ export const homeworks: Homework[] = [
   },
   {
     id: '4',
-    title: 'HOMEWORK 4',
+    title: 'FASHION ERAS',
     week: 'WEEK 4',
     slug: 'homework-4',
     prompts: [
       {
-        label: 'PROMPT A',
-        question: 'Add the prompt question here.',
+        label: 'PROMPT 1 - THE SPIRIT OF THE TIMES',
+        question: 'Researching the Zeitgeist of the Past. It is difficult to recognize the spirit of the times as you are living through them. To sensitize yourself to this concept, research the Zeitgeist using the categories of dominant events, ideals, social groups, attitude, and technology for the decades from the 1920s to the 1990s. How do these categories define what is remembered at each decade?',
         slides: [
-          { title: 'SLIDE 1', content: 'Add slide content here.' },
-          { title: 'SLIDE 2', content: 'Add slide content here.' },
-          { title: 'SLIDE 3', content: 'Add slide content here.' },
+          {
+            title: 'THE ROARING TWENTIES TO THE ATOMIC AGE',
+            content: 'The 1920s were defined by liberation after World War I: jazz, flappers, the 19th Amendment, and a booming economy that made consumption a national identity. The dominant ideal was youth and freedom - Coco Chanel shortened hemlines, and women bobbed their hair. The 1930s reversed this with the Great Depression, and the zeitgeist shifted to endurance and escapism - Hollywood glamour provided fantasy while breadlines defined reality. The 1940s were consumed by World War II: women entered factories, utility clothing rationed fabric, and patriotic duty replaced individual expression. The 1950s brought postwar prosperity and conformity - suburban homes, nuclear families, Christian Dior\'s New Look restored exaggerated femininity as a reaction to wartime austerity. Television became the dominant technology, homogenizing American culture for the first time.',
+            image: '/images/homework-4/slide-1.jpg',
+          },
+          {
+            title: 'REVOLUTION AND REACTION',
+            content: 'The 1960s shattered the conformity of the fifties. The civil rights movement, feminism, Vietnam protests, and the counterculture made rebellion the dominant attitude. Youth culture became the driving social group - for the first time, teenagers and college students dictated fashion through miniskirts, tie-dye, and anti-establishment dress. Technology brought the birth control pill and the moon landing. The 1970s fragmented into multiple competing spirits: disco hedonism, punk nihilism, the oil crisis, and Watergate cynicism all coexisted. The dominant ideal shifted from collective revolution to individual self-expression. The 1980s responded with excess - Reagan-era materialism, Wall Street culture, power dressing, and MTV made wealth, ambition, and visible consumption the defining values. Technology gave us the personal computer and the VCR.',
+            image: '/images/homework-4/slide-2.jpg',
+          },
+          {
+            title: 'THE END OF THE CENTURY',
+            content: 'The 1990s are remembered through two competing lenses. The early nineties were defined by grunge, Generation X cynicism, and anti-fashion - Kurt Cobain wore thrift store flannel as a rejection of eighties excess. The dominant attitude was ironic detachment. The late nineties brought the dot-com boom, globalization optimism, and minimalism - Calvin Klein, Helmut Lang, and Jil Sander stripped fashion to clean lines. The internet emerged as the decade\'s defining technology, but its cultural impact wouldn\'t fully register until the 2000s. What connects all these decades is that the zeitgeist is only visible in retrospect. People living through the 1960s didn\'t call it "the sixties" - they were just reacting to material conditions. The spirit of the times is always a story we tell afterward about what mattered and why.',
+            image: '/images/homework-4/slide-3.jpg',
+          },
         ],
       },
       {
-        label: 'PROMPT B',
-        question: 'Add the prompt question here.',
+        label: 'PROMPT 3 - BUSINESS BREAKTHROUGHS AND CLASSIC DESIGNERS',
+        question: 'Investigate the design and marketing of fashion by influential designers like Paul Poiret, Jean Patou, Coco Chanel, Elsa Schiaparelli, Pierre Cardin, and Yves Saint Laurent to discover practices that were revolutionary in their time but are now commonplace ways of doing business. What revolutionary ways of doing business today will become accepted practice in the future?',
         slides: [
-          { title: 'SLIDE 1', content: 'Add slide content here.' },
-          { title: 'SLIDE 2', content: 'Add slide content here.' },
-          { title: 'SLIDE 3', content: 'Add slide content here.' },
+          {
+            title: 'THE FIRST REVOLUTIONARIES',
+            content: 'Paul Poiret was fashion\'s first modern businessman. In 1911, he became the first couturier to launch a branded perfume, Parfums de Rosine, understanding that fragrance could democratize a luxury brand without diluting its exclusivity. This model - using accessible products to fund haute couture - became the foundation of the modern fashion business. Jean Patou followed by pioneering sportswear as luxury in the 1920s, dressing tennis champion Suzanne Lenglen and proving that fashion could exist outside the evening gown. Coco Chanel then revolutionized the entire industry: costume jewelry as legitimate fashion (not imitation), jersey fabric elevated from workwear to couture, and the Little Black Dress as democratic elegance. Her No. 5 perfume (1921) remains the most commercially successful fragrance in history, and its licensing model funds Chanel\'s couture house to this day.',
+            image: '/images/homework-4/slide-4.jpg',
+          },
+          {
+            title: 'SCALING LUXURY',
+            content: 'Elsa Schiaparelli introduced artist collaboration as a business strategy - her work with Salvador Dali in the 1930s created garments that were simultaneously art objects and wearable fashion, generating press coverage that no advertising budget could match. This blueprint is now standard: Louis Vuitton x Takashi Murakami, Nike x Off-White, Uniqlo x KAWS. Pierre Cardin took the most radical step: in 1959, he was expelled from the Chambre Syndicale for launching a ready-to-wear line at Printemps department store. Couture was supposed to be exclusive. Cardin saw licensing as the future and eventually put his name on over 800 product categories. Yves Saint Laurent refined this with Rive Gauche in 1966 - a standalone ready-to-wear boutique that made designer fashion accessible without the couture appointment. Every designer retail store today follows the model YSL invented.',
+            image: '/images/homework-4/slide-5.jpg',
+          },
+          {
+            title: 'TODAY\'S BREAKTHROUGHS',
+            content: 'The revolutionary practices of today that will become standard tomorrow: direct-to-consumer brands bypassing wholesale entirely (Everlane, Reformation), using social media creators as the primary marketing channel instead of print advertising, on-demand manufacturing that produces garments only after they are ordered (reducing overstock waste), and AI-generated design tools that can iterate hundreds of variations before a single physical sample is cut. Digital fashion - garments that exist only as filters or metaverse wearables - may seem marginal now, just as Cardin\'s ready-to-wear seemed scandalous in 1959. The pattern is consistent: every major fashion business innovation was initially rejected by the establishment before becoming the standard way of operating within a generation.',
+            image: '/images/homework-4/slide-6.jpg',
+          },
         ],
       },
     ],
