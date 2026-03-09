@@ -75,7 +75,7 @@ export default function Description({ projects, isExiting, onProjectClick, onTit
             onMouseOver={() => { if (!isExiting) onHover(i); }}
             onClick={() => onProjectClick(slug, i)}
             key={`p${i}`}
-            className="project-title m-0 cursor-none text-[5.4vw] uppercase leading-none text-white"
+            className="project-title m-0 cursor-none text-[4vw] uppercase leading-none text-white"
             style={{ visibility: 'hidden' }}
           >
             {title}
