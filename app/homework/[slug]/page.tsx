@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
 import { homeworks } from '@/data/homeworks';
+import { midtermPresentation } from '@/data/midtermPresentation';
 import HomeworkPageComponent from '@/components/HomeworkPage';
+
+const allSlidePages = [...homeworks, midtermPresentation];
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -8,7 +11,7 @@ interface PageProps {
 
 export default async function HomeworkRoute({ params }: PageProps) {
   const { slug } = await params;
-  const homework = homeworks.find(h => h.slug === slug);
+  const homework = allSlidePages.find(h => h.slug === slug);
 
   if (!homework) {
     notFound();
@@ -18,7 +21,7 @@ export default async function HomeworkRoute({ params }: PageProps) {
 }
 
 export async function generateStaticParams() {
-  return homeworks.map((hw) => ({
+  return allSlidePages.map((hw) => ({
     slug: hw.slug,
   }));
 }

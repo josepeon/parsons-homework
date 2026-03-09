@@ -6,6 +6,8 @@ import { Homework } from '@/types/homework';
 import gsap from 'gsap';
 import { SplitText } from 'gsap/SplitText';
 
+const BASE_PATH = process.env.__NEXT_ROUTER_BASEPATH || '';
+
 gsap.registerPlugin(SplitText);
 
 interface HomeworkPageProps {
@@ -38,49 +40,39 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
 
     const tl = gsap.timeline({ onComplete: () => { isTransitioning.current = false; } });
 
-    // Title
-    const titleEl = slideRef.current.querySelector('.slide-title');
-    if (titleEl) {
-      const split = SplitText.create(titleEl, { type: 'chars', charsClass: 'rolling-char' });
-      gsap.set(titleEl, { perspective: 700, transformStyle: 'preserve-3d', opacity: 1 });
-      const depth = -window.innerWidth / 8;
-      tl.fromTo(
-        split.chars,
-        { rotationX: -90, opacity: 0, transformOrigin: `50% 50% ${depth}px` },
-        { rotationX: 0, opacity: 1, transformOrigin: `50% 50% ${depth}px`, stagger: 0.03, duration: 0.8, ease: 'power3.out' },
-        0
-      );
-    }
-
-    // Labels
-    const labels = slideRef.current.querySelectorAll('.slide-label');
-    labels.forEach((el, i) => {
-      SplitText.create(el, {
-        type: 'words,lines', linesClass: 'footer-line', mask: 'lines',
-        onSplit: (self) => {
-          gsap.set(el, { opacity: 1 });
-          tl.from(self.lines, { yPercent: 100, opacity: 0, duration: 0.7, stagger: 0.05, ease: 'expo.out' }, 0.3 + i * 0.1);
-        },
-      });
-    });
-
-    // Content
-    const content = slideRef.current.querySelectorAll('.slide-content');
-    content.forEach((el, i) => {
-      SplitText.create(el, {
-        type: 'words,lines', linesClass: 'footer-line', mask: 'lines',
-        onSplit: (self) => {
-          gsap.set(el, { opacity: 1 });
-          tl.from(self.lines, { yPercent: 100, opacity: 0, duration: 0.8, stagger: 0.06, ease: 'expo.out' }, 0.5 + i * 0.12);
-        },
-      });
-    });
-
-    // Image
+    // Image (fade in alongside text)
     const imgEl = slideRef.current.querySelector('.slide-image');
     if (imgEl) {
-      tl.fromTo(imgEl, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out' }, 0.3);
+      tl.fromTo(imgEl, { opacity: 0, scale: 0.95 }, { opacity: 1, scale: 1, duration: 0.6, ease: 'power3.out' }, 0.2);
     }
+
+    // Animate all text elements in DOM order (top to bottom)
+    const textEls = slideRef.current.querySelectorAll('.slide-title, .slide-label, .slide-content');
+    let offset = 0;
+    const depth = -window.innerWidth / 8;
+
+    textEls.forEach((el) => {
+      if (el.classList.contains('slide-title')) {
+        const split = SplitText.create(el, { type: 'chars', charsClass: 'rolling-char' });
+        gsap.set(el, { perspective: 700, transformStyle: 'preserve-3d', opacity: 1 });
+        tl.fromTo(
+          split.chars,
+          { rotationX: -90, opacity: 0, transformOrigin: `50% 50% ${depth}px` },
+          { rotationX: 0, opacity: 1, transformOrigin: `50% 50% ${depth}px`, stagger: 0.03, duration: 0.8, ease: 'power3.out' },
+          offset
+        );
+        offset += 0.25;
+      } else {
+        SplitText.create(el, {
+          type: 'words,lines', linesClass: 'footer-line', mask: 'lines',
+          onSplit: (self) => {
+            gsap.set(el, { opacity: 1 });
+            tl.from(self.lines, { yPercent: 100, opacity: 0, duration: 0.7, stagger: 0.05, ease: 'expo.out' }, offset);
+          },
+        });
+        offset += 0.15;
+      }
+    });
   }, []);
 
   const animateSlideOut = useCallback((direction: 1 | -1): Promise<void> => {
@@ -259,7 +251,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
           className="nav-arrow text-white hover:opacity-100 transition-opacity"
           style={{
             position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)',
-            background: 'none', border: 'none', fontSize: '36px', cursor: 'none', zIndex: 10, opacity: 0.4,
+            background: 'none', border: 'none', fontSize: '81px', cursor: 'none', zIndex: 10, opacity: 0.4,
           }}
         >
           ‹
@@ -271,7 +263,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
           className="nav-arrow text-white hover:opacity-100 transition-opacity"
           style={{
             position: 'absolute', right: '20px', top: '50%', transform: 'translateY(-50%)',
-            background: 'none', border: 'none', fontSize: '36px', cursor: 'none', zIndex: 10, opacity: 0.4,
+            background: 'none', border: 'none', fontSize: '81px', cursor: 'none', zIndex: 10, opacity: 0.4,
           }}
         >
           ›
@@ -305,13 +297,17 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
         ) : current.type === 'prompt' ? (
           /* Prompt slide */
           <div className="flex flex-row items-center" style={{ gap: '60px', width: '100%', height: '100%' }}>
-            {/* Image on left */}
-            {current.image && (
+            {/* Media on left */}
+            {(current.image || current.video) && (
               <div
                 className="slide-image slide-animate rounded-[1vw] overflow-hidden relative flex-shrink-0"
                 style={{ width: '35%', aspectRatio: current.aspectRatio ?? 3 / 4, maxHeight: '75vh', visibility: 'hidden', opacity: 0 }}
               >
-                <img src={current.image} alt={current.title} className="w-full h-full object-cover" />
+                {current.video ? (
+                  <video src={`${BASE_PATH}${current.video}`} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+                ) : (
+                  <img src={`${BASE_PATH}${current.image}`} alt={current.title} className="w-full h-full object-cover" />
+                )}
               </div>
             )}
 

@@ -1,59 +1,41 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import { motion, useSpring } from 'framer-motion';
-
-const spring = {
-  stiffness: 150,
-  damping: 15,
-  mass: 0.1,
-};
 
 export default function GlobalCursor() {
-  const cursorX = useSpring(0, spring);
-  const cursorY = useSpring(0, spring);
-  const hasMovedRef = useRef(false);
+  const dotRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
-    // Hide custom cursor on touch devices
     if (window.matchMedia('(pointer: coarse)').matches) {
       setIsTouch(true);
       return;
     }
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (!hasMovedRef.current) {
-        hasMovedRef.current = true;
-        setVisible(true);
-        cursorX.jump(e.clientX);
-        cursorY.jump(e.clientY);
-        return;
-      }
-      cursorX.set(e.clientX);
-      cursorY.set(e.clientY);
+      if (!dotRef.current) return;
+      if (!visible) setVisible(true);
+      dotRef.current.style.transform = `translate(${e.clientX - 6}px, ${e.clientY - 6}px)`;
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, [cursorX, cursorY]);
+  }, [visible]);
 
   if (isTouch) return null;
 
   return (
-    <motion.div
+    <div
+      ref={dotRef}
       className="fixed top-0 left-0 pointer-events-none z-[9999]"
       style={{
-        x: cursorX,
-        y: cursorY,
         width: 12,
         height: 12,
         borderRadius: '50%',
         border: '1px solid white',
-        translateX: '-50%',
-        translateY: '-50%',
         opacity: visible ? 1 : 0,
+        willChange: 'transform',
       }}
     />
   );

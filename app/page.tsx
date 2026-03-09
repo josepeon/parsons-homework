@@ -5,14 +5,22 @@ import Lenis from 'lenis';
 import Description from '@/components/Description';
 import Footer from '@/components/Footer';
 import { homeworks } from '@/data/homeworks';
+import { midterm } from '@/data/midterm';
+import { midtermPresentation } from '@/data/midtermPresentation';
 import gsap from 'gsap';
+
+const allProjects = [
+  ...homeworks.map(hw => ({ title: hw.title, slug: hw.slug, route: `/homework/${hw.slug}` })),
+  { title: 'MIDTERM - ' + midterm.title, slug: midterm.slug, route: `/midterm/${midterm.slug}` },
+  { title: 'MIDTERM PRESENTATION', slug: midtermPresentation.slug, route: `/homework/${midtermPresentation.slug}` },
+];
 
 export default function Home() {
   const scrollTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lenisRef = useRef<Lenis | null>(null);
   const [isExiting, setIsExiting] = useState(false);
   const isExitingRef = useRef(false);
-  const exitSlugRef = useRef('');
+  const exitRouteRef = useRef('');
   const titlesAnimDone = useRef(false);
   const router = useRouter();
 
@@ -24,14 +32,15 @@ export default function Home() {
 
   const tryNavigate = useCallback(() => {
     if (titlesAnimDone.current) {
-      router.push(`/homework/${exitSlugRef.current}`);
+      router.push(exitRouteRef.current);
     }
   }, [router]);
 
-  const handleHomeworkClick = useCallback((slug: string) => {
+  const handleProjectClick = useCallback((slug: string) => {
     if (isExitingRef.current) return;
     isExitingRef.current = true;
-    exitSlugRef.current = slug;
+    const project = allProjects.find(p => p.slug === slug);
+    exitRouteRef.current = project?.route || `/homework/${slug}`;
     setIsExiting(true);
   }, []);
 
@@ -71,7 +80,7 @@ export default function Home() {
         const scrollY = lenisRef.current.scroll;
 
         const sectionHeight = windowHeight * 1.2;
-        const totalSections = homeworks.length + 1;
+        const totalSections = allProjects.length + 1;
 
         const currentSectionIndex = Math.round(scrollY / sectionHeight);
         const targetSection = Math.max(0, Math.min(currentSectionIndex, totalSections - 1));
@@ -108,12 +117,12 @@ export default function Home() {
   return (
     <main className="relative cursor-none h-screen flex flex-col overflow-hidden home-main">
       <Description
-        projects={homeworks.map(hw => ({
-          title: hw.title,
-          slug: hw.slug,
+        projects={allProjects.map(p => ({
+          title: p.title,
+          slug: p.slug,
         }))}
         isExiting={isExiting}
-        onProjectClick={(slug) => handleHomeworkClick(slug)}
+        onProjectClick={(slug) => handleProjectClick(slug)}
         onTitlesExitComplete={handleTitlesExitComplete}
         onEntryComplete={handleEntryComplete}
         onHover={() => {}}
