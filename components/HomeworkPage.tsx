@@ -278,13 +278,13 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
       )}
 
       {/* Slide content area */}
-      <div ref={slideRef} className="h-screen w-full flex flex-col justify-center items-center" style={{ padding: '100px 100px' }}>
+      <div ref={slideRef} key={currentSlide} className="h-screen w-full flex flex-col justify-center items-center" style={{ padding: '100px 100px' }}>
         {current.type === 'title' ? (
           /* Title slide */
           <div className="flex flex-col items-center text-center" style={{ gap: '24px' }}>
             <h1
               className="slide-title slide-animate text-white uppercase leading-none"
-              style={{ fontSize: '5vw', margin: 0, visibility: 'hidden' }}
+              style={{ fontSize: '4vw', margin: 0, visibility: 'hidden' }}
             >
               {homework.title}
             </h1>
@@ -303,48 +303,51 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
           </div>
         ) : current.type === 'prompt' ? (
           /* Prompt slide */
-          <div className="flex flex-col items-center text-center" style={{ gap: '32px', maxWidth: '800px', width: '100%' }}>
-            {/* Prompt label */}
-            <span
-              className="slide-label slide-animate text-white text-[13px] uppercase tracking-[0.25em] opacity-40"
-              style={{ visibility: 'hidden' }}
-            >
-              {homework.prompts[current.promptIndex].label}
-            </span>
-
-            {/* Prompt question */}
-            <p
-              className="slide-content slide-animate text-white leading-relaxed italic"
-              style={{ fontSize: '15px', opacity: 0.45, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
-            >
-              &ldquo;{homework.prompts[current.promptIndex].question}&rdquo;
-            </p>
-
-            {/* Slide title */}
-            <h2
-              className="slide-title slide-animate text-white uppercase leading-tight"
-              style={{ fontSize: '3vw', margin: 0, visibility: 'hidden' }}
-            >
-              {current.title}
-            </h2>
-
-            {/* Image if present */}
+          <div className="flex flex-row items-center" style={{ gap: '60px', width: '100%', height: '100%' }}>
+            {/* Image on left */}
             {current.image && (
               <div
-                className="slide-image slide-animate rounded-[1vw] overflow-hidden relative"
-                style={{ width: '50vw', height: '30vw', visibility: 'hidden', opacity: 0 }}
+                className="slide-image slide-animate rounded-[1vw] overflow-hidden relative flex-shrink-0"
+                style={{ width: '40%', height: '70%', visibility: 'hidden', opacity: 0 }}
               >
                 <img src={current.image} alt={current.title} className="w-full h-full object-cover" />
               </div>
             )}
 
-            {/* Content */}
-            <p
-              className="slide-content slide-animate text-white leading-relaxed"
-              style={{ fontSize: '18px', opacity: 0.75, margin: 0, visibility: 'hidden', maxWidth: '650px' }}
-            >
-              {current.content}
-            </p>
+            {/* Content on right */}
+            <div className="flex flex-col justify-center" style={{ gap: '24px', flex: 1 }}>
+              {/* Prompt label */}
+              <span
+                className="slide-label slide-animate text-white text-[13px] uppercase tracking-[0.25em] opacity-40"
+                style={{ visibility: 'hidden' }}
+              >
+                {homework.prompts[current.promptIndex].label}
+              </span>
+
+              {/* Slide title */}
+              <h2
+                className="slide-title slide-animate text-white uppercase leading-tight"
+                style={{ fontSize: '3vw', margin: 0, visibility: 'hidden' }}
+              >
+                {current.title}
+              </h2>
+
+              {/* Prompt question */}
+              <p
+                className="slide-content slide-animate text-white leading-relaxed italic"
+                style={{ fontSize: '15px', opacity: 0.45, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
+              >
+                &ldquo;{homework.prompts[current.promptIndex].question}&rdquo;
+              </p>
+
+              {/* Content */}
+              <p
+                className="slide-content slide-animate text-white leading-relaxed"
+                style={{ fontSize: '18px', opacity: 0.75, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
+              >
+                {current.content}
+              </p>
+            </div>
           </div>
         ) : null}
       </div>
