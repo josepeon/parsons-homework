@@ -23,8 +23,9 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
   // Build flat list of 7 slides: title + 3 prompt A + 3 prompt B
   const slides = [
     { type: 'title' as const },
-    ...homework.prompts[0].slides.map((s, i) => ({ type: 'prompt' as const, promptIndex: 0, slideIndex: i, ...s })),
-    ...homework.prompts[1].slides.map((s, i) => ({ type: 'prompt' as const, promptIndex: 1, slideIndex: i, ...s })),
+    ...homework.prompts.flatMap((p, pi) =>
+      p.slides.map((s, si) => ({ type: 'prompt' as const, promptIndex: pi, slideIndex: si, ...s }))
+    ),
   ];
 
   const totalSlides = slides.length;

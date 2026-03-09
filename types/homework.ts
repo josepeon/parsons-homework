@@ -16,5 +16,5 @@ export interface Homework {
   title: string;
   week: string;
   slug: string;
-  prompts: [Prompt, Prompt];
+  prompts: Prompt[];
 }

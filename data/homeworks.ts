@@ -115,26 +115,71 @@ export const homeworks: Homework[] = [
   },
   {
     id: '3',
-    title: 'HOMEWORK 3',
+    title: 'FORECASTING THEORIES AND METHODS',
     week: 'WEEK 3',
     slug: 'homework-3',
     prompts: [
       {
-        label: 'PROMPT A',
-        question: 'Add the prompt question here.',
+        label: 'PROMPT 1 - CONSPICUOUS EXAMPLES',
+        question: 'Make a visual dictionary of examples of conspicuous leisure, conspicuous consumption, reverse ostentation, or conspicuous counter-consumption and the other examples of conspicuousness you have learned. Use as a timeline the entire twentieth century or one decade. How will they be expressed in the future? Will one be more dominant than the others?',
         slides: [
-          { title: 'SLIDE 1', content: 'Add slide content here.' },
-          { title: 'SLIDE 2', content: 'Add slide content here.' },
-          { title: 'SLIDE 3', content: 'Add slide content here.' },
+          {
+            title: 'CONSPICUOUS CONSUMPTION',
+            content: 'The 2010s opened with maximalism in full force. Logomania returned through Gucci under Alessandro Michele, who layered double-G prints across every surface starting in 2015. Supreme built a billion-dollar empire on box-logo scarcity, and resellers camped outside stores for days. Virgil Abloh\'s Off-White put quotation marks on everything from shoelaces to handbags, turning branding into ironic commentary that still functioned as status display. The hypebeast era was conspicuous consumption at its most literal: the point was to be seen wearing the thing, to photograph it, to post it. Instagram became the stage, and the outfit was the performance. Thorstein Veblen described this in 1899 - he just didn\'t have a smartphone.',
+            image: '/images/homework-3/slide-1.jpg',
+          },
+          {
+            title: 'REVERSE OSTENTATION',
+            content: 'By mid-decade, a counter-movement emerged. Normcore - a term coined by the trend forecasting collective K-Hole in 2013 - proposed that the most radical fashion statement was no statement at all. Steve Jobs had already demonstrated this with his black turtleneck uniform, and Mark Zuckerberg followed with grey t-shirts. The Silicon Valley founder aesthetic was anti-fashion as power move: I am too important to think about clothes. This was Veblen\'s "conspicuous leisure" inverted - signaling status not through display but through deliberate absence of display. By 2023, this evolved into "quiet luxury," where a $4,000 Loro Piana polo looks identical to a $30 Uniqlo one. The consumption is still conspicuous - it just requires insider knowledge to decode.',
+            image: '/images/homework-3/slide-2.jpg',
+          },
+          {
+            title: 'THE FUTURE OF DISPLAY',
+            content: 'Looking ahead, conspicuousness is fracturing across digital and physical worlds simultaneously. Digital fashion - NFT wearables, AR filters, virtual skins in games like Fortnite and Roblox - creates new arenas for conspicuous consumption where the "object" has no material cost. Meanwhile, conspicuous counter-consumption is gaining traction through the degrowth and anti-fast-fashion movements: visible mending, thrift flips, and Patagonia\'s "Don\'t Buy This Jacket" campaign. The most likely dominant mode will be what could be called conspicuous curation - not what you buy but how you assemble, remix, and narrate your consumption across platforms. The display shifts from the object to the taste system around it.',
+            image: '/images/homework-3/slide-3.jpg',
+          },
         ],
       },
       {
-        label: 'PROMPT B',
-        question: 'Add the prompt question here.',
+        label: 'PROMPT 2 - CLASSIC PRODUCTS OF THE 21ST CENTURY',
+        question: 'Select a long-term trend. Look for one that relates to fashion, interior design, architecture, retail stores, or other consumer culture. Do any research you need to understand the trend and to find connections to other trends. Then write two scenarios - one optimistic about the future of this item in the twenty-first century and one pessimistic. Discuss the plausibility of each scenario in class.',
         slides: [
-          { title: 'SLIDE 1', content: 'Add slide content here.' },
-          { title: 'SLIDE 2', content: 'Add slide content here.' },
-          { title: 'SLIDE 3', content: 'Add slide content here.' },
+          {
+            title: 'THE TOTE BAG',
+            content: 'The cotton tote bag began as the ultimate anti-consumer object. In the mid-2000s, Anya Hindmarch\'s "I\'m Not A Plastic Bag" tote (2007) launched the reusable bag as fashion statement and environmental gesture. NPR, The New Yorker, and museum gift shops followed, turning the tote into a cultural signifier of educated, liberal, urban identity. It cost nothing or next to nothing - you accumulated them by attending events, donating to public radio, or shopping at Whole Foods. The tote bag became a walking billboard for your intellectual and ethical loyalties, and by the 2010s, owning dozens of them had become its own form of overconsumption, undermining the original sustainability message entirely.',
+            image: '/images/homework-3/slide-4.jpg',
+          },
+          {
+            title: 'OPTIMISTIC SCENARIO',
+            content: 'In the optimistic future, the tote bag evolves into a genuinely sustainable staple. Advances in organic cotton farming and closed-loop textile recycling make production carbon-neutral by 2030. Brands move toward fewer, higher-quality totes designed to last years rather than be given away for free. The tote becomes a canvas for local artisans and independent designers, replacing the mass-produced promotional model with limited, meaningful designs. Its simplicity - a flat bag with handles - makes it the ideal substrate for circular fashion: easy to repair, easy to recycle, impossible to over-engineer. The tote bag fulfills its original promise as the anti-disposable object.',
+            image: '/images/homework-3/slide-5.jpg',
+          },
+          {
+            title: 'PESSIMISTIC SCENARIO',
+            content: 'In the pessimistic future, the tote bag completes its ironic arc into pure waste. A 2011 UK Environment Agency study found that a cotton tote must be reused 131 times to offset its production footprint versus a single plastic bag. Most totes are used fewer than ten times. By 2030, millions of promotional totes clog landfills and textile waste streams alongside fast fashion. The object that symbolized conscious consumption becomes evidence of performative environmentalism - buying the signifier of sustainability without changing actual behavior. The tote joins the growing category of "green" products whose main function is to make consumers feel virtuous while the systems they participate in remain unchanged.',
+            image: '/images/homework-3/slide-6.jpg',
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 3 - GROUP IDENTITY',
+        question: 'Identify a group that embodies the definitions of a new, visible elite or a fast-moving social group with a penchant for differentiation. Use visuals and descriptive words to describe the group\'s current look. What consumer segments are most likely to imitate the group\'s taste? Predict the next stages of fashion change and prepare a presentation to communicate your prediction.',
+        slides: [
+          {
+            title: 'THE TECH FOUNDER AESTHETIC',
+            content: 'The Silicon Valley founder class has emerged as one of the twenty-first century\'s most influential style groups, despite - or because of - their apparent rejection of fashion. The uniform is precise: merino wool crew necks (Brunello Cucinelli, $1,200), plain grey or black t-shirts (James Perse, $80), slim chinos or technical pants (Outlier, $200), and minimalist sneakers (Common Projects, $425) or Allbirds ($100). The palette is exclusively neutral: black, grey, navy, white. Watches are either Apple Watches or vintage Rolexes - nothing in between. The look communicates: I solve problems, I don\'t perform. Sam Altman, the Collison brothers at Stripe, and the entire Y Combinator cohort dress this way. It is a uniform disguised as non-fashion.',
+            image: '/images/homework-3/slide-7.jpg',
+          },
+          {
+            title: 'WHO IMITATES',
+            content: 'The first consumer segment to adopt the tech founder aesthetic was the broader professional-managerial class in coastal cities. Venture capitalists, startup employees, product managers, and consultants adopted the merino-and-chinos uniform by the mid-2010s. Everlane, Uniqlo, and COS became the accessible entry points. The second wave was remote workers during the pandemic, who adopted "Zoom-appropriate minimalism" - clean tops, neutral tones, nothing too branded. The third and current wave is Gen Z professionals entering the workforce, who combine founder aesthetics with thrifted pieces, creating a hybrid that reads as both professional and anti-corporate. The influence flows from a small elite (fewer than 10,000 founders) outward to millions of workers who want to signal competence without flashiness.',
+            image: '/images/homework-3/slide-8.jpg',
+          },
+          {
+            title: 'WHAT COMES NEXT',
+            content: 'The tech founder aesthetic is approaching its saturation point. When Zuckerberg appeared wearing a gold chain and sheepskin jacket in 2023, it signaled a shift: the billionaire class is beginning to embrace visible luxury again. Prediction: the next stage will split in two directions. One branch moves toward "tech artisan" - founders wearing handmade Japanese denim, Portuguese leather goods, and small-batch ceramics, signaling craft over scale. The other moves toward open maximalism - LVMH-level luxury without apology, as the tech industry\'s cultural confidence grows. The minimalist uniform will trickle down fully into corporate dress codes and lose its association with innovation. Within five years, the founder look will be what khakis and a button-down were in the 1990s: default professional attire, stripped of its original meaning.',
+            image: '/images/homework-3/slide-9.jpg',
+          },
         ],
       },
     ],
