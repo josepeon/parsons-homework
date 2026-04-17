@@ -293,7 +293,7 @@ export const homeworks: Homework[] = [
             title: 'EVOLUTION AND WESTERNIZATION',
             content: 'The Meiji Restoration of 1868 introduced Western dress as a marker of modernity and national progress. Government officials were required to wear Western suits; the kimono retreated from public life into ceremony and domestic spaces. By the mid-twentieth century, most Japanese wore Western dress daily and reserved kimono for weddings, funerals, coming-of-age ceremonies (seijin-shiki), and festivals. The yukata, a lightweight cotton version worn at summer festivals and hot spring resorts, became the primary everyday encounter with the form for most people. This shift had a paradoxical effect on the garment\'s cultural weight: by becoming ceremonial rather than quotidian, the kimono became more meaningful even as it became less common. Contemporary kimono culture has splintered: a traditional school insists on orthodox wearing conventions (specific knots, seasonal fabrics, proper undergarments), while a younger movement called kimono shakai promotes personal styling that mixes vintage kimono with sneakers, layered turtlenecks, and Western accessories as a living creative practice.',
             image: '/images/homework-6/slide-5.jpg',
-            aspectRatio: 1024 / 1366,
+            aspectRatio: 5764 / 3842,
           },
           {
             title: 'THE RUNWAY INHERITANCE',
@@ -319,7 +319,7 @@ export const homeworks: Homework[] = [
             title: 'PUNK: THE SOURCE CODE',
             content: 'Punk emerged simultaneously in New York (the Ramones at CBGB, 1974) and London (the Sex Pistols, the Clash, 1976), but it was the British version that became the global template. The aesthetic was inseparable from its political context: Thatcher\'s Britain, mass youth unemployment, and post-imperial collapse. Vivienne Westwood and Malcolm McLaren\'s SEX boutique at 430 King\'s Road was the laboratory. The visual language was deliberate provocation: ripped clothing held together with safety pins, mohawks dyed in primary colors, Doc Martens and tartan repurposed from Scottish nationalism, leather jackets covered in hand-painted slogans and studs. The DIY ethic was the core principle: make it yourself, destroy and reassemble, reject the commercial. The look communicated a specific message: this system has failed us, and we reject it entirely. That message, and the aesthetic that carried it, proved exportable.',
             image: '/images/homework-7/slide-1.jpg',
-            aspectRatio: 736 / 920,
+            aspectRatio: 800 / 533,
           },
           {
             title: 'THREE TRANSLATIONS: AMERICA, JAPAN, BRAZIL',
@@ -343,13 +343,13 @@ export const homeworks: Homework[] = [
             title: 'GORPCORE: THE OUTDOORS NEVER LEFT',
             content: 'GORP stands for Good Old Raisins and Peanuts — trail mix — and gorpcore refers to outdoor technical gear worn as urban fashion. The silhouette: Arc\'teryx shell jackets, Salomon XT-6 trail runners, Patagonia fleeces, Osprey daypacks, technical pants from brands like Cotopaxi or Norrøna. The palette is functional (muted earth tones, safety orange, technical greys) occasionally interrupted by the neon accents of 1990s outdoor gear. Gorpcore is an evolution of normcore (the studied embrace of unremarkable clothing) taken outdoors and made more technically specific. Where normcore was passive and anti-fashion, gorpcore has enthusiasts: people who genuinely know the difference between Gore-Tex and eVent membranes and who treat gear research like a hobby. Arc\'teryx Veilance serves the luxury tier, Satisfy Running bridges performance and avant-garde, and Stone Island provides the luxury technical crossover that has been there since the 1980s. The style tribe is not associated with music but with a post-pandemic shift toward outdoor activity, remote work aesthetics, and a suspicion of anything that looks like it was designed to impress.',
             image: '/images/homework-7/slide-4.jpg',
-            aspectRatio: 900 / 1200,
+            aspectRatio: 1537 / 980,
           },
           {
             title: 'INDIE SLEAZE: THE BLOG ERA RETURNS',
             content: 'Indie sleaze is Gen Z\'s excavation of the 2006–2012 indie rock moment: American Apparel hoodies, skinny jeans, flash photography that bleaches out skin tones, low-rise everything, and the studied casualness of someone who just rolled out of a show at a small venue. It is directly descended from the scene around bands like the Strokes, Yeah Yeah Yeahs, and Vampire Weekend, and the blogs (The Sartorialist, Facehunter) that documented their audiences. The current music connection is explicit: Wet Leg, Beabadoobee, Snail Mail, and Men I Trust have all been styled and photographed within this aesthetic language. What is traditional: the silhouette (skinny, layered, slightly disheveled), the anti-curation ethos, the downtown-New-York-or-London geography. What is new: the self-awareness. In 2008, no one called it indie sleaze; now the aesthetic is named, catalogued, and deliberately reconstructed via vintage sourcing and TikTok tutorials. Brands: vintage American Apparel (the actual original, not the relaunch), New Balance 550, Carhartt WIP, Converse Chuck 70s, and whatever thrift store produces the right faded flannel. The tribe is defined by its relationship to a specific historical moment it mostly experienced through YouTube and Tumblr archives.',
             image: '/images/homework-7/slide-5.jpg',
-            aspectRatio: 735 / 948,
+            aspectRatio: 640 / 480,
           },
           {
             title: 'AFROPUNK: RECLAMATION AS STYLE TRIBE',
