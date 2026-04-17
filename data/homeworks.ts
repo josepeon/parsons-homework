@@ -249,4 +249,116 @@ export const homeworks: Homework[] = [
       },
     ],
   },
+  {
+    id: '6',
+    title: 'WORLD CULTURES',
+    week: 'WEEK 6',
+    slug: 'homework-6',
+    prompts: [
+      {
+        label: 'PROMPT 1 · INFLUENTIAL DESIGNERS AND COUNTRIES',
+        question: 'Who are your favorite designers and what country are they from? Do their signature styles reflect the influences that their home countries are known for? Which country\'s signature style is your favorite overall and why?',
+        slides: [
+          {
+            title: 'THE JAPANESE MASTERS',
+            content: 'Three designers from Japan redefined what fashion could be, and none of them could have come from anywhere else. Yohji Yamamoto, Rei Kawakubo, and Issey Miyake all arrived in Paris in the late 1970s and early 1980s carrying an entirely different set of cultural references: wabi-sabi (the beauty of imperfection and impermanence), ma (the significance of negative space), and a Buddhist relationship with the body as something to be concealed and revealed rather than displayed. Yamamoto drapes black fabric around the body in ways that erase conventional silhouette. Kawakubo\'s Comme des Garçons creates garments with deliberate asymmetry, lumps, and voids. Miyake\'s Pleats Please line uses pleating techniques derived from Japanese origami and traditional textile folding. The connection between country and designer is not metaphorical. It is structural.',
+            image: '/images/homework-6/slide-1.jpg',
+            aspectRatio: 474 / 592,
+          },
+          {
+            title: 'THE BELGIAN AVANT-GARDE',
+            content: 'In 1986, six graduates of the Royal Academy of Fine Arts in Antwerp drove a rented truck to Paris and hung their collections in a borrowed showroom. The Antwerp Six: Ann Demeulemeester, Dries Van Noten, Walter Van Beirendonck, Dirk Van Saene, Dirk Bikkembergs, and Marina Yee. Belgium sits at the intersection of French elegance and Germanic rigor, filtered through a Flemish painting tradition that valued darkness, texture, and psychological depth over surface beauty. Demeulemeester\'s work is architectural and melancholic, consistently referencing the Belgian landscape\'s flatness and the existentialism embedded in Flemish culture. Van Noten layers print, color, and textile from across the world with the collector\'s obsessiveness of a Flemish still-life painter cataloguing abundance. Martin Margiela, who studied at the same academy, deconstructed fashion\'s logic from the inside out, which is arguably the most Belgian thing anyone has ever done.',
+            image: '/images/homework-6/slide-2.jpg',
+            aspectRatio: 736 / 1104,
+          },
+          {
+            title: 'WHY JAPAN WINS',
+            content: 'If I have to choose one country\'s design philosophy as my favorite, it is Japan, and the reason is the relationship between tradition and radical innovation. Every Japanese designer I admire is simultaneously deeply grounded in historical textile and craft traditions and completely uninterested in nostalgia. Miyake spent years studying traditional Noh theater costume construction before inventing Pleats Please. Yamamoto trained in tailoring under his mother, who ran a dressmaker\'s shop in postwar Tokyo, before dismantling tailoring\'s conventions entirely. The aesthetic commitment is also total: black is not a safe choice in Japanese design, it is a philosophical position. The treatment of the body as a canvas rather than something to be flattered or corrected produces the most intellectually honest fashion in the world. Japanese designers ask what clothing is for, rather than simply assuming they already know.',
+            image: '/images/homework-6/slide-3.jpg',
+            aspectRatio: 800 / 1067,
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 2 · CULTURAL DRESS',
+        question: 'Pick a country and identify an item of cultural dress specific to that country. Research the history of the style, and trace how it has evolved over time. Find some modern interpretations of the style in a contemporary runway collection. What aspects of the style are the same as the traditional garment, and what has been changed?',
+        slides: [
+          {
+            title: 'THE KIMONO: ORIGINS',
+            content: 'The kimono as we recognize it today emerged during Japan\'s Heian period (794–1185 CE), though its roots extend to Chinese-influenced kosode garments introduced centuries earlier. The defining structure is the T-shape: straight-cut panels sewn together without curves, designed to be worn with the body rather than fitted to it. During the Heian court, aristocratic women layered up to twelve robes (juunihitoe) in specific color combinations that communicated season, rank, and emotional state through a precise color language called kasane no irome. The Edo period (1603–1868) standardized the kimono into the form that persists today: a single outer robe tied with an obi sash, with regional variations in dyeing techniques (Kyoto\'s Nishijin weaving, Tokyo\'s Edo komon stencil dyeing, Kyushu\'s Arimatsu shibori) reflecting local craft traditions. The kimono was not merely clothing. It was a text that anyone literate in its visual language could read.',
+            image: '/images/homework-6/slide-4.jpg',
+            aspectRatio: 736 / 920,
+          },
+          {
+            title: 'EVOLUTION AND WESTERNIZATION',
+            content: 'The Meiji Restoration of 1868 introduced Western dress as a marker of modernity and national progress. Government officials were required to wear Western suits; the kimono retreated from public life into ceremony and domestic spaces. By the mid-twentieth century, most Japanese wore Western dress daily and reserved kimono for weddings, funerals, coming-of-age ceremonies (seijin-shiki), and festivals. The yukata, a lightweight cotton version worn at summer festivals and hot spring resorts, became the primary everyday encounter with the form for most people. This shift had a paradoxical effect on the garment\'s cultural weight: by becoming ceremonial rather than quotidian, the kimono became more meaningful even as it became less common. Contemporary kimono culture has splintered: a traditional school insists on orthodox wearing conventions (specific knots, seasonal fabrics, proper undergarments), while a younger movement called kimono shakai promotes personal styling that mixes vintage kimono with sneakers, layered turtlenecks, and Western accessories as a living creative practice.',
+            image: '/images/homework-6/slide-5.jpg',
+            aspectRatio: 1024 / 1366,
+          },
+          {
+            title: 'THE RUNWAY INHERITANCE',
+            content: 'The kimono\'s influence on contemporary fashion operates on two levels. Direct reference: John Galliano\'s Spring 2007 collection for Dior reproduced obi sashes and kimono sleeves in Western silhouettes, an exercise in Japonisme that was visually spectacular and conceptually shallow. Structural inheritance: Yohji Yamamoto and Issey Miyake do not quote the kimono, they think through it. Yamamoto\'s wrapped coats use no buttons or zippers, relying instead on folding and tying, a construction logic borrowed directly from kimono tradition. Miyake\'s A-POC (A Piece of Cloth) collection took the kimono\'s single-cloth philosophy to its geometric extreme, producing entire garments from one continuous piece of fabric with no waste. What stays in the modern interpretations: the T-shaped construction, the wrapping closure, the treatment of fabric as plane rather than pattern piece. What changes: the body underneath, the context of wearing, the material (technical fabrics, pleated polyester, bonded leather), and the gender assumptions embedded in the original garment.',
+            image: '/images/homework-6/slide-6.jpg',
+            aspectRatio: 564 / 772,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: '7',
+    title: 'SUBCULTURES',
+    week: 'WEEK 7',
+    slug: 'homework-7',
+    prompts: [
+      {
+        label: 'PROMPT 3 · STYLE TRIBES ACROSS THE WORLD',
+        question: 'Like other trends, subcultural styles do not stay contained among their creators, instead they spread among like-minded individuals, and often spring up in other countries. Pick a style tribe such as punk and research how it spread to other countries. What aspects of the group\'s style are universal? Are there any regional differences due to different climate or cultural norms? Compare and contrast the different countries\' interpretations of the style tribe.',
+        slides: [
+          {
+            title: 'PUNK: THE SOURCE CODE',
+            content: 'Punk emerged simultaneously in New York (the Ramones at CBGB, 1974) and London (the Sex Pistols, the Clash, 1976), but it was the British version that became the global template. The aesthetic was inseparable from its political context: Thatcher\'s Britain, mass youth unemployment, and post-imperial collapse. Vivienne Westwood and Malcolm McLaren\'s SEX boutique at 430 King\'s Road was the laboratory. The visual language was deliberate provocation: ripped clothing held together with safety pins, mohawks dyed in primary colors, Doc Martens and tartan repurposed from Scottish nationalism, leather jackets covered in hand-painted slogans and studs. The DIY ethic was the core principle: make it yourself, destroy and reassemble, reject the commercial. The look communicated a specific message: this system has failed us, and we reject it entirely. That message, and the aesthetic that carried it, proved exportable.',
+            image: '/images/homework-7/slide-1.jpg',
+            aspectRatio: 736 / 920,
+          },
+          {
+            title: 'THREE TRANSLATIONS: AMERICA, JAPAN, BRAZIL',
+            content: 'American hardcore (Black Flag, Dead Kennedys, Minor Threat, 1979–1985) stripped punk of its theatricality and made it more utilitarian. Work boots replaced platforms, military surplus replaced decorated leather jackets, and shaved heads replaced mohawks. The American version was less about spectacle and more about physicality: the music was faster, the shows were more violent, the look communicated function over performance. Japan\'s encounter with punk produced something entirely different: Visual Kei, which emerged in the mid-1980s through bands like X Japan and Buck-Tick. Japanese punk amplified the theatrical maximalism and gender ambiguity inherent in British punk to operatic levels, fusing it with kabuki makeup traditions, manga aesthetics, and an attention to craft that punk\'s DIY ethos theoretically opposed. In Brazil, punk arrived in São Paulo around 1977 during the military dictatorship and immediately became genuinely political in a way that British punk, for all its rhetoric, never quite was. When you are actually living under authoritarian rule, the music and the look carry a different weight.',
+            image: '/images/homework-7/slide-2.jpg',
+            aspectRatio: 1000 / 750,
+          },
+          {
+            title: 'WHAT TRAVELS, WHAT STAYS',
+            content: 'Across every geographic translation, punk\'s universal elements are consistent: the rejection of mainstream commercial dress, the DIY assembly logic, the use of black as a base palette, and the silhouette (skinny, deconstructed, or deliberately destroyed). These travel because they are philosophical positions, not just aesthetic choices. What changes is what counts as transgressive. In Japan, where gender-normative dress was strictly enforced by corporate culture, wearing a skirt as a man was as radical as any safety pin. In Germany, where Nina Hagen merged punk with opera and electronic music, the transgression was class: mixing high cultural references with underground aesthetics. Climate matters too: Australian punk in the late 1970s adapted toward shorts and work boots suited to the heat, making the look more working-class utilitarian and less gothic. The regional differences reveal which aspects of punk were culturally portable (the attitude, the DIY logic, the anti-commercial stance) and which were contextual (the specific garments, the political targets, the musical tempo).',
+            image: '/images/homework-7/slide-3.jpg',
+            aspectRatio: 828 / 1007,
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 4 · NEW STYLE TRIBES',
+        question: 'Look online for current style tribes. Are they evolutions or subcategories of established style tribes or are they unique unto themselves? If they are related to an established style tribe, which elements of their look are traditional, and which are new? If they are a style tribe that is associated with a particular style of music, who are the popular artists right now? Which brands do they wear?',
+        slides: [
+          {
+            title: 'GORPCORE: THE OUTDOORS NEVER LEFT',
+            content: 'GORP stands for Good Old Raisins and Peanuts — trail mix — and gorpcore refers to outdoor technical gear worn as urban fashion. The silhouette: Arc\'teryx shell jackets, Salomon XT-6 trail runners, Patagonia fleeces, Osprey daypacks, technical pants from brands like Cotopaxi or Norrøna. The palette is functional (muted earth tones, safety orange, technical greys) occasionally interrupted by the neon accents of 1990s outdoor gear. Gorpcore is an evolution of normcore (the studied embrace of unremarkable clothing) taken outdoors and made more technically specific. Where normcore was passive and anti-fashion, gorpcore has enthusiasts: people who genuinely know the difference between Gore-Tex and eVent membranes and who treat gear research like a hobby. Arc\'teryx Veilance serves the luxury tier, Satisfy Running bridges performance and avant-garde, and Stone Island provides the luxury technical crossover that has been there since the 1980s. The style tribe is not associated with music but with a post-pandemic shift toward outdoor activity, remote work aesthetics, and a suspicion of anything that looks like it was designed to impress.',
+            image: '/images/homework-7/slide-4.jpg',
+            aspectRatio: 900 / 1200,
+          },
+          {
+            title: 'INDIE SLEAZE: THE BLOG ERA RETURNS',
+            content: 'Indie sleaze is Gen Z\'s excavation of the 2006–2012 indie rock moment: American Apparel hoodies, skinny jeans, flash photography that bleaches out skin tones, low-rise everything, and the studied casualness of someone who just rolled out of a show at a small venue. It is directly descended from the scene around bands like the Strokes, Yeah Yeah Yeahs, and Vampire Weekend, and the blogs (The Sartorialist, Facehunter) that documented their audiences. The current music connection is explicit: Wet Leg, Beabadoobee, Snail Mail, and Men I Trust have all been styled and photographed within this aesthetic language. What is traditional: the silhouette (skinny, layered, slightly disheveled), the anti-curation ethos, the downtown-New-York-or-London geography. What is new: the self-awareness. In 2008, no one called it indie sleaze; now the aesthetic is named, catalogued, and deliberately reconstructed via vintage sourcing and TikTok tutorials. Brands: vintage American Apparel (the actual original, not the relaunch), New Balance 550, Carhartt WIP, Converse Chuck 70s, and whatever thrift store produces the right faded flannel. The tribe is defined by its relationship to a specific historical moment it mostly experienced through YouTube and Tumblr archives.',
+            image: '/images/homework-7/slide-5.jpg',
+            aspectRatio: 735 / 948,
+          },
+          {
+            title: 'AFROPUNK: RECLAMATION AS STYLE TRIBE',
+            content: 'Afropunk began as a 2003 documentary by James Spooner about Black Americans in predominantly white punk spaces, then became the Afropunk Festival in Brooklyn in 2005. It is not an evolution of punk; it is a reclamation of it. The historical argument is that Black artists, from Chuck Berry to Bad Brains to Living Colour, were foundational to the music and aesthetic that became "punk," and then were systematically erased from its mainstream narrative. The Afropunk aesthetic reclaims that erasure: punk\'s DIY energy and anti-establishment stance fused with Afrocentric elements (natural hair worn as political statement, kente cloth and African print mixed with leather and studs, platform boots with traditional jewelry). The result is something that has no exact parallel in the existing subcultural taxonomy. Artists central to the tribe\'s current visual language include Janelle Monáe (whose android mythology and sharp tailoring define a specific Afrofuturist variant), Steve Lacy, and Willow Smith. Brands: Pyer Moss, whose runway shows function as cultural essays on Black American experience; Telfar, whose shopping bag has become one of the most democratic luxury symbols in recent fashion history; and KidSuper, which brings a similar DIY maximalism from a different angle. Afropunk is unique unto itself precisely because it demands that you know the history it is responding to.',
+            image: '/images/homework-7/slide-6.jpg',
+            aspectRatio: 1200 / 1498,
+          },
+        ],
+      },
+    ],
+  },
 ];
