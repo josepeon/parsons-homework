@@ -72,6 +72,11 @@ a *, button *, input *, select *, textarea *, label *,
   }
 }
 
+.rolling-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
 .rolling-char {
   display: inline-block;
 }

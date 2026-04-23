@@ -27,8 +27,9 @@ export default function Description({ projects, isExiting, onProjectClick, onTit
 
     titles.forEach((title, i) => {
       const split = SplitText.create(title, {
-        type: 'chars',
+        type: 'chars,words',
         charsClass: 'rolling-char',
+        wordsClass: 'rolling-word',
       });
 
       gsap.set(title, {

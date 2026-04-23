@@ -53,7 +53,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
 
     textEls.forEach((el) => {
       if (el.classList.contains('slide-title')) {
-        const split = SplitText.create(el, { type: 'chars', charsClass: 'rolling-char' });
+        const split = SplitText.create(el, { type: 'chars,words', charsClass: 'rolling-char', wordsClass: 'rolling-word' });
         gsap.set(el, { perspective: 700, transformStyle: 'preserve-3d', opacity: 1 });
         tl.fromTo(
           split.chars,
@@ -115,7 +115,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
 
     const backEl = containerRef.current.querySelector('.back-link');
     if (backEl) {
-      const backSplit = SplitText.create(backEl, { type: 'chars', charsClass: 'rolling-char' });
+      const backSplit = SplitText.create(backEl, { type: 'chars,words', charsClass: 'rolling-char', wordsClass: 'rolling-word' });
       gsap.set(backEl, { perspective: 700, transformStyle: 'preserve-3d', opacity: 1 });
       tl.fromTo(backSplit.chars,
         { rotationX: -90, opacity: 0, transformOrigin: '50% 50% -30px' },
