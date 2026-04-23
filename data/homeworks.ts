@@ -361,4 +361,116 @@ export const homeworks: Homework[] = [
       },
     ],
   },
+  {
+    id: '8',
+    title: 'FINE ART AND POPULAR CULTURE',
+    week: 'WEEK 8',
+    slug: 'homework-8',
+    prompts: [
+      {
+        label: 'PROMPT 1 · TV AND FILM INFLUENCES',
+        question: 'What television shows or movies do you remember as having an influence on your fashion sense when you were younger?',
+        slides: [
+          {
+            title: 'THE MATRIX: A UNIFORM FOR THE FUTURE',
+            content: 'The film that most directly shaped my fashion thinking was The Matrix (1999). I was too young to see it in theaters, but watching it as a teenager crystallized something I hadn\'t been able to articulate: clothes could be a declaration of your relationship with the world, not just decoration. Costume designer Kym Barrett built Neo\'s wardrobe around an inversion of corporate dress — long black dusters instead of suits, combat boots instead of oxfords, performance fabrics instead of wool. The visual logic was military crossed with monastic: these people had opted out and built their own system. What struck me was the coherence. The Nebuchadnezzar crew wore lived-in synthetics and layered knitwear. The agents wore identical FBI suits. The Matrix\'s own denizens wore mainstream fashion. Every faction\'s clothing communicated their relationship to reality. I had never seen a film use fashion so systematically as world-building, and I have never stopped thinking about fashion that way since.',
+            image: '/images/homework-8/slide-1.jpg',
+            aspectRatio: 474 / 592,
+          },
+          {
+            title: 'ENTOURAGE AND THE LOGIC OF ASPIRATION',
+            content: 'Entourage (2004–2011) worked differently. Where The Matrix constructed a philosophical aesthetic, Entourage built a catalog of aspiration. The show functioned as a weekly advertisement for a specific vision of masculine success: chrome watches, Tom Ford suits, Supreme before Supreme went global, and the casual luxury of someone who never checks a price tag. Vince Chase wore Rick Owens. E wore slim-cut designer denim. Drama wore too much. Turtle wore what he thought the cool kids wore. The fashion characterized each personality precisely. What was culturally significant: Entourage was one of the first shows where audiences actively reverse-engineered the wardrobe, searching forum threads to identify a jacket from a single frame. This was pre-social media infrastructure. People were doing manually what "shop the look" technology now does automatically. The show proved that aspirational screen fashion doesn\'t require a female protagonist or a fashion-industry setting to move product. It just requires clothes that communicate a world people want to inhabit.',
+            image: '/images/homework-8/slide-2.jpg',
+            aspectRatio: 736 / 920,
+          },
+          {
+            title: 'HOW THE SCREEN ENTERS THE WARDROBE',
+            content: 'The mechanism by which screen fashion enters real wardrobes has formalized completely in the past two decades. In the 1990s, the loop was diffuse and slow: Sharon Stone\'s Gap turtleneck at the 1996 Oscars became iconic through magazine coverage over months. Today it is measured in hours. Euphoria\'s costume designer Heidi Bivens works with brands for explicit storyline integration; HBO broadcasts an episode; within twenty-four hours, "Euphoria outfit" searches spike, and Depop listings multiply. Zara and SHEIN have reverse-engineered this lag, producing copies of screen-worn pieces before a season finishes airing. The conversation between screen and wardrobe has become a closed system: designers create for characters, brands partner for placement, audiences buy, fast fashion copies, the cycle repeats. The original question assumes a passive relationship between viewer and costume. The infrastructure now treats that relationship as a revenue stream to be optimized, which changes both how costume designers do their jobs and how audiences watch.',
+            image: '/images/homework-8/slide-3.jpg',
+            aspectRatio: 1000 / 750,
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 2 · SOCIAL MEDIA AND BRAND COMMUNICATION',
+        question: 'Which brands are the most active and successful at using social media to enhance their brand? What makes a good social media brand? What risks do fashion companies and designers take on when they communicate directly with their customers in such a public way?',
+        slides: [
+          {
+            title: 'THREE STRATEGIES THAT WORK',
+            content: 'Three brands have built genuinely distinct social media presences in the past five years, each through a completely different approach. Jacquemus treats Simon Porte Jacquemus\' personal account as the brand\'s primary editorial channel, posting childhood photos, fabrication behind-the-scenes, and personal moments with the same frequency as campaign imagery; the line between designer and brand disappears. His installations engineered for screenshots (the miniature bag gondola in Venice, the Jacquemus ice cream truck) generate earned media through visual absurdity executed at luxury quality. Bottega Veneta under Daniel Lee took the opposite path in 2021: complete withdrawal from all social media platforms. No Instagram, no TikTok, no Twitter. The brand created scarcity of communication at the moment every brand was competing for more. Searches and organic press coverage spiked. The silence was louder than most posting schedules. Savage X Fenty built its entire audience through radical size inclusivity on TikTok, turning customers into models and community into campaign. Three totally different strategies, all succeeding on the same platforms.',
+            image: '/images/homework-8/slide-4.jpg',
+            aspectRatio: 800 / 1067,
+          },
+          {
+            title: 'WHAT MAKES A GOOD SOCIAL MEDIA BRAND',
+            content: 'The common thread across successful fashion brands on social media is not a posting frequency or a content format. It is a clear point of view that survives translation into short-form digital content. Jacquemus has a point of view: Mediterranean sensuality, handmade warmth, the poetry of small things. Every post, whether a campaign or a personal memory, reinforces that universe. Bottega Veneta\'s silence was itself a point of view: we are too confident in our product to require constant digital reassurance. Savage X Fenty\'s point of view is community and body democracy, which social platforms are specifically built to express. What consistently fails is the brand that approaches social media as a broadcast channel for content that would have been a magazine ad: the same glossy image posted into an algorithm designed for conversation. Fashion social media succeeds when it treats the platform as a native medium and builds content that could only exist there. The format shapes the message. Brands that understand this build something that functions like a worldview, not a feed.',
+            image: '/images/homework-8/slide-5.jpg',
+            aspectRatio: 4233 / 2760,
+          },
+          {
+            title: 'THE RISKS OF DIRECT COMMUNICATION',
+            content: 'Direct brand-to-consumer communication on social media removes the editorial filter that previously protected fashion brands from their own judgment errors. Balenciaga\'s November 2022 campaign featuring children holding stuffed animals in bondage gear was approved through an entire internal process before going live; it reached the public unmediated, created a crisis within hours, and cost the brand relationships with its most prominent ambassadors. The brand\'s public response arrived in stages over days, which compounded the damage. Dolce & Gabbana\'s 2018 China campaign was leaked before launch; the subsequent backlash effectively closed the Chinese market for years. The risk is not social media itself, it is the speed at which bad judgment becomes public record before institutional corrections can function. Every fashion brand now operates with a live audience that documents, screenshots, and redistributes anything faster than any communications team can contain. The same directness that allows Jacquemus to build an intimate brand relationship allows a single campaign to become a permanent, searchable record of failure. The speed cuts both ways.',
+            image: '/images/homework-8/slide-6.jpg',
+            aspectRatio: 2937 / 4411,
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: '9',
+    title: 'INSPIRATION, THEME & MOOD',
+    week: 'WEEK 9',
+    slug: 'homework-9',
+    prompts: [
+      {
+        label: 'PROMPT 2 · CORE CONCEPTS',
+        question: 'Choose a core concept and explore how different designers have interpreted it. What is the throughline? How did they make their own statements on the subject? What sets each apart?',
+        slides: [
+          {
+            title: 'THE CONCEPT: NOSTALGIA — RAF SIMONS',
+            content: 'The core concept I am exploring is nostalgia, and the first designer is Raf Simons, whose relationship to the past is the most specific of any designer working today. Simons\' Fall 2002 collection referenced the 1970s punk and industrial rock imagery of his adolescence with precision that went far beyond general period aesthetic: specific Joy Division and New Order records, Peter Saville\'s Factory Records graphic design, the visual culture of Belgian industrial towns. His nostalgia was autobiographical rather than historical. He was not imagining a past he didn\'t live; he was remembering one he did, and translating private memory into public garment. This distinction matters. Nostalgic fashion that draws on a period the designer did not experience tends toward costume. Simons\' nostalgia is sourced from actual feeling, which gives it specificity that reads as authenticity. His Fall 2017 debut at Calvin Klein, with its American horror imagery and Americana iconography, applied the same methodology: not "1970s America" as a general aesthetic but specific cultural artifacts that carried genuine feeling.',
+            image: '/images/homework-9/slide-1.jpg',
+            aspectRatio: 736 / 920,
+          },
+          {
+            title: 'NOSTALGIA — GUCCI AND MARINE SERRE',
+            content: 'Alessandro Michele\'s Gucci (2015–2022) treated all historical periods as simultaneously available: Renaissance portraiture, 1970s Italian cinema, art nouveau botanical illustration, and 1980s sportswear appeared in the same collection with no hierarchy. This was nostalgia as total archive — everything is past, everything is quotation, and the maximalism was the point. Michele\'s nostalgia was not about longing for a specific time but about the pleasure of access to all times at once. Marine Serre\'s nostalgia operates as political critique. Her upcycled garments reference a world before mass production by using its detritus: the deadstock fabrics, vintage scarves, and reclaimed textiles that appear throughout her work are nostalgia for a relationship with materials that industrial fashion destroyed. Her crescent moon print appeared on repurposed vintage cloth before it became new fabric. The waste is the argument. What separates all three: Simons\' nostalgia is personal and autobiographical; Michele\'s is omnivorous and joyful; Serre\'s is ecological and political. Same core concept, three completely different statements about what the past means and who gets to use it.',
+            image: '/images/homework-9/slide-2.jpg',
+            aspectRatio: 1000 / 1333,
+          },
+          {
+            title: 'THE THROUGHLINE',
+            content: 'The throughline across all three interpretations of nostalgia is that the most interesting version of the concept is specific rather than general. Nostalgia as a design strategy fails when it produces period costume: technically accurate reproductions of a decade\'s silhouette that communicate research rather than feeling. It succeeds when it carries the emotional weight of the original relationship to the past, whether that is personal memory (Simons), cultural pleasure (Michele), or ecological grief (Serre). Bill Blass, cited in Deitz (1987), put it directly: while nostalgia is valuable, a designer\'s role is to refresh it for the present rather than reproduce it. The question is not what the past looked like but what it felt like, and then what that feeling can generate in the present. Each of these three designers answers that question differently because their relationship to the past is different. The lesson for designers is that nostalgia only works as inspiration when you are honest about which specific past you are actually drawing on, and why it matters to you.',
+            image: '/images/homework-9/slide-3.jpg',
+            aspectRatio: 736 / 920,
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 3 · APPROPRIATION',
+        question: 'Choose a historical or contemporary example of cultural appropriation in fashion. Analyze the origins of the style that has been co-opted. Was there backlash? If so, did the brand respond? How do you think they handled it? What could they have done differently to move towards appreciation/support instead of exploitation?',
+        slides: [
+          {
+            title: 'URBAN OUTFITTERS VS. THE NAVAJO NATION: ORIGINS',
+            content: 'The Navajo Nation\'s visual vocabulary, geometric patterns derived from centuries of Diné weaving tradition, is one of the most recognizable textile languages in North America. Navajo weaving developed from Spanish contact in the 1600s, absorbed churro wool and trade yarn technology, and evolved through the Classic and Transition Periods into forms so visually distinctive that their design language functions as cultural identification and sacred patrimony. The Indian Arts and Crafts Act of 1990 explicitly prohibits misrepresenting the geographic or tribal origin of Native American goods in commercial marketing. It is federal law, not cultural sensitivity guidance. When Urban Outfitters labeled products "Navajo" — including a flask, a set of underwear, notebooks, and jewelry — they were not simply borrowing an aesthetic. Under the Act, they were committing commercial fraud. The Navajo Nation held a registered trademark on their name. The use was unauthorized, uncredited, and uncompensated. The products were manufactured in Asia, and the commercial benefit of the Navajo name flowed entirely to a corporation headquartered in Philadelphia.',
+            image: '/images/homework-9/slide-4.jpg',
+            aspectRatio: 3000 / 2016,
+          },
+          {
+            title: 'THE BACKLASH AND THE RESPONSE',
+            content: 'The Navajo Nation filed suit against Urban Outfitters in 2012, citing the Indian Arts and Crafts Act, the Lanham Act (trademark infringement), and the Federal Trademark Dilution Act. The lawsuit identified over twenty products using the Navajo name without authorization. Urban Outfitters\' initial legal response was to argue that "Navajo" had become a generic term for a style of geometric pattern, and that the Navajo Nation therefore no longer had a proprietary claim to its own tribal name. This was the worst possible public position: explicitly arguing that a sovereign nation\'s identity had been so thoroughly commercially colonized that the nation itself no longer owned it. The legal and reputational damage was compounded by the timing: the lawsuit arrived as the broader conversation about fashion and cultural appropriation was becoming a mainstream media topic, and Urban Outfitters\' generic-term argument read, correctly, as contemptuous. The case settled in 2016 on confidential terms. Urban Outfitters removed the Navajo labeling and the products disappeared from their catalog.',
+            image: '/images/homework-9/slide-5.jpg',
+            aspectRatio: 1000 / 750,
+          },
+          {
+            title: 'WHAT THEY SHOULD HAVE DONE',
+            content: 'The path from appropriation to appreciation was not aesthetically complicated. Urban Outfitters could have contacted the Navajo Nation\'s Division of Economic Development, established a formal licensing agreement, paid royalties on every product sold using Navajo design language, and credited the source in their marketing. This arrangement is commercially straightforward, legally clean, and genuinely supportive of the artisans whose creative tradition they were profiting from. Pendleton Woolen Mills has maintained a formal partnership with multiple tribal nations for decades. The design language is similar. The difference is attribution, authorization, and shared revenue. The deeper irony is that an authentic partnership would have been a significant marketing advantage. "Made in collaboration with the Navajo Nation" is a more compelling and defensible product story than "Navajo flask." Urban Outfitters chose an approach that simultaneously violated federal law, invited a six-year lawsuit, damaged their brand in the emerging cultural appropriation conversation, and actively harmed the community they were exploiting. The lesson is that appreciation requires making the source visible and compensated. Appropriation is what happens when you want the aesthetic without the relationship.',
+            image: '/images/homework-9/slide-6.jpg',
+            aspectRatio: 2000 / 1532,
+          },
+        ],
+      },
+    ],
+  },
 ];
