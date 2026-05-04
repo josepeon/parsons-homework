@@ -49,8 +49,8 @@ export const finalProjectPresentation: Homework = {
         {
           title: 'THE CONSTRUCTED SILHOUETTE',
           content: 'The silhouette of this convergence is architectural and self-supporting: garments that hold their shape without a body inside them, objects before they are clothing. The oversized shell jacket with articulated patterning, seams placed for range of motion rather than aesthetics. The wide-leg utility trouser in bonded technical fabric with no visible fly hardware, internal waistband, clean ankle break. The layering system as a designed wardrobe: base, mid, and shell with intentional interaction between layers, exposed zip pulls in contrasting finish, magnetic closures that seal flat. In Nooon\'s GRDT collection, the Circle Top is padded into a round sculptural shape that holds itself away from the body. The Extrusion Pants use vertical padded channels as structural ribbing. The garment stands on its own.',
-          image: '/images/final-project/slide-6.jpg',
-          aspectRatio: 1800 / 2250,
+          video: '/images/final-project/slide-6.mp4',
+          aspectRatio: 1080 / 1348,
         },
       ],
     },
