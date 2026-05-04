@@ -195,7 +195,7 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
     if (current.type === 'title') return homework.week;
     if (current.type === 'prompt') {
       const p = homework.prompts[current.promptIndex];
-      return `${p.label} · SLIDE ${current.slideIndex + 1}/3`;
+      return `${p.label} · SLIDE ${current.slideIndex + 1}/${p.slides.length}`;
     }
     return '';
   };

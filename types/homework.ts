@@ -9,7 +9,7 @@ export interface Slide {
 export interface Prompt {
   label: string;
   question: string;
-  slides: [Slide, Slide, Slide];
+  slides: Slide[];
 }
 
 export interface Homework {
