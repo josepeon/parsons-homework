@@ -3,6 +3,7 @@ export interface Slide {
   content: string;
   image?: string;
   video?: string;
+  images?: string[];
   aspectRatio?: number;
 }
 

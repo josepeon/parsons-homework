@@ -65,6 +65,18 @@ export const finalProjectPresentation: Homework = {
           aspectRatio: 1 / 1,
         },
         {
+          title: '',
+          content: '',
+          images: [
+            '/images/final-project/converse-1.jpg',
+            '/images/final-project/converse-2.jpg',
+            '/images/final-project/converse-3.jpg',
+            '/images/final-project/converse-4.jpg',
+            '/images/final-project/converse-5.jpg',
+            '/images/final-project/converse-6.jpg',
+          ],
+        },
+        {
           title: 'NOOON: THE FULL STACK',
           content: 'Nooon is a fashion brand built from the start to operate across digital and physical contexts simultaneously. The REBOOT collection embedded NFC tags for digital authentication. The clothing uses technical materials, bonded fabrics, taped seams, modular construction (embedded objects and technical clothing). The OH virtual showroom, built in Unreal Engine and connected to live Shopify inventory, released February 4, 2026. The IMMRSV SHWRM event in New York City on February 16 brought the spatial experience to a physical audience (event as product). The Converse collaboration is an active creative exchange started at that same event (collabs as credibility transfer). Results from the campaign period: $20,929 revenue, 116 orders, 82 unique customers, $180 average order value. Highsnobiety covered it. People bought things inside a game.',
           video: '/images/final-project/nooon-sheep.mp4',
@@ -75,48 +87,6 @@ export const finalProjectPresentation: Homework = {
           content: 'Near term: digital product passports move from voluntary luxury adoption to EU regulatory requirement. Technical clothing consolidates from trend to category default. Medium term: gaming fashion becomes a parallel market equal to physical. The brand without a digital product line feels incomplete. AI voice companions, already deployed at the web level by platforms like OH, move into spatial environments. The brands that do not offer AI-assisted shopping will feel behind the same way brands with no mobile site felt behind in 2013. Long term: spatial commerce becomes the primary sales channel for brands with strong world-building and aesthetic identity. The physical store survives as a material reference library and event space. The flat product page survives the way mail-order catalogs survive. Nooon and OH are the proof of concept that exists right now. The question for everyone else is not whether. It is how fast.',
           image: '/images/final-project/slide-9.jpg',
           aspectRatio: 1887 / 2254,
-        },
-      ],
-    },
-    {
-      label: 'NOOON X CONVERSE',
-      question: 'Visual development for the Nooon x Converse collaboration. Class review and feedback.',
-      slides: [
-        {
-          title: 'NOOON X CONVERSE 01',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-1.jpg',
-          aspectRatio: 1 / 1,
-        },
-        {
-          title: 'NOOON X CONVERSE 02',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-2.jpg',
-          aspectRatio: 1 / 1,
-        },
-        {
-          title: 'NOOON X CONVERSE 03',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-3.jpg',
-          aspectRatio: 1 / 1,
-        },
-        {
-          title: 'NOOON X CONVERSE 04',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-4.jpg',
-          aspectRatio: 1 / 1,
-        },
-        {
-          title: 'NOOON X CONVERSE 05',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-5.jpg',
-          aspectRatio: 1 / 1,
-        },
-        {
-          title: 'NOOON X CONVERSE 06',
-          content: 'Campaign visual development for the Nooon x Converse collaboration. Custom Nooon shoes built on Converse bases alongside GRDT collection pieces. Shot by Alan Padilla, styling by Ocean Savage. Shoot date May 16, 2026.',
-          image: '/images/final-project/converse-6.jpg',
-          aspectRatio: 1 / 1,
         },
       ],
     },

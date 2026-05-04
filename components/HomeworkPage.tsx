@@ -295,57 +295,79 @@ export default function HomeworkPage({ homework }: HomeworkPageProps) {
             </span>
           </div>
         ) : current.type === 'prompt' ? (
-          /* Prompt slide */
-          <div className="flex flex-row items-center" style={{ gap: '60px', width: '100%', height: '100%' }}>
-            {/* Media on left */}
-            {(current.image || current.video) && (
-              <div
-                className="slide-image slide-animate rounded-[1vw] overflow-hidden relative flex-shrink-0"
-                style={{ width: '35%', aspectRatio: current.aspectRatio ?? 3 / 4, maxHeight: '75vh', visibility: 'hidden', opacity: 0 }}
-              >
-                {current.video ? (
-                  <video src={`${BASE_PATH}${current.video}`} autoPlay loop muted playsInline className="w-full h-full object-cover" />
-                ) : (
-                  <img src={`${BASE_PATH}${current.image}`} alt={current.title} className="w-full h-full object-cover" />
-                )}
-              </div>
-            )}
-
-            {/* Content on right */}
-            <div className="flex flex-col justify-center" style={{ gap: '24px', flex: 1 }}>
-              {/* Prompt label */}
-              <span
-                className="slide-label slide-animate text-white text-[13px] uppercase tracking-[0.25em] opacity-40"
-                style={{ visibility: 'hidden' }}
-              >
-                {homework.prompts[current.promptIndex].label}
-              </span>
-
-              {/* Slide title */}
-              <h2
-                className="slide-title slide-animate text-white uppercase leading-tight"
-                style={{ fontSize: '3vw', margin: 0, visibility: 'hidden' }}
-              >
-                {current.title}
-              </h2>
-
-              {/* Prompt question */}
-              <p
-                className="slide-content slide-animate text-white leading-relaxed italic"
-                style={{ fontSize: '15px', opacity: 0.45, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
-              >
-                &ldquo;{homework.prompts[current.promptIndex].question}&rdquo;
-              </p>
-
-              {/* Content */}
-              <p
-                className="slide-content slide-animate text-white leading-relaxed"
-                style={{ fontSize: '18px', opacity: 0.75, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
-              >
-                {current.content}
-              </p>
+          current.images ? (
+            /* Gallery slide — grid of images, no text */
+            <div
+              className="slide-image slide-animate"
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 1fr)',
+                gap: '10px',
+                height: '75vh',
+                aspectRatio: '3 / 2',
+                visibility: 'hidden',
+                opacity: 0,
+              }}
+            >
+              {current.images.map((img, i) => (
+                <div key={i} className="rounded-[0.5vw] overflow-hidden">
+                  <img src={`${BASE_PATH}${img}`} alt="" className="w-full h-full object-cover" />
+                </div>
+              ))}
             </div>
-          </div>
+          ) : (
+            /* Standard prompt slide */
+            <div className="flex flex-row items-center" style={{ gap: '60px', width: '100%', height: '100%' }}>
+              {/* Media on left */}
+              {(current.image || current.video) && (
+                <div
+                  className="slide-image slide-animate rounded-[1vw] overflow-hidden relative flex-shrink-0"
+                  style={{ width: '35%', aspectRatio: current.aspectRatio ?? 3 / 4, maxHeight: '75vh', visibility: 'hidden', opacity: 0 }}
+                >
+                  {current.video ? (
+                    <video src={`${BASE_PATH}${current.video}`} autoPlay loop muted playsInline className="w-full h-full object-cover" />
+                  ) : (
+                    <img src={`${BASE_PATH}${current.image}`} alt={current.title} className="w-full h-full object-cover" />
+                  )}
+                </div>
+              )}
+
+              {/* Content on right */}
+              <div className="flex flex-col justify-center" style={{ gap: '24px', flex: 1 }}>
+                {/* Prompt label */}
+                <span
+                  className="slide-label slide-animate text-white text-[13px] uppercase tracking-[0.25em] opacity-40"
+                  style={{ visibility: 'hidden' }}
+                >
+                  {homework.prompts[current.promptIndex].label}
+                </span>
+
+                {/* Slide title */}
+                <h2
+                  className="slide-title slide-animate text-white uppercase leading-tight"
+                  style={{ fontSize: '3vw', margin: 0, visibility: 'hidden' }}
+                >
+                  {current.title}
+                </h2>
+
+                {/* Prompt question */}
+                <p
+                  className="slide-content slide-animate text-white leading-relaxed italic"
+                  style={{ fontSize: '15px', opacity: 0.45, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
+                >
+                  &ldquo;{homework.prompts[current.promptIndex].question}&rdquo;
+                </p>
+
+                {/* Content */}
+                <p
+                  className="slide-content slide-animate text-white leading-relaxed"
+                  style={{ fontSize: '18px', opacity: 0.75, margin: 0, visibility: 'hidden', maxWidth: '600px' }}
+                >
+                  {current.content}
+                </p>
+              </div>
+            </div>
+          )
         ) : null}
       </div>
     </div>
