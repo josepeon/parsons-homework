@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
 import { midterm } from '@/data/midterm';
+import { finalProject } from '@/data/finalProject';
 import MidtermPageComponent from '@/components/MidtermPage';
+
+const essays = [midterm, finalProject];
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -8,14 +11,15 @@ interface PageProps {
 
 export default async function MidtermRoute({ params }: PageProps) {
   const { slug } = await params;
+  const essay = essays.find(e => e.slug === slug);
 
-  if (slug !== midterm.slug) {
+  if (!essay) {
     notFound();
   }
 
-  return <MidtermPageComponent essay={midterm} />;
+  return <MidtermPageComponent essay={essay} />;
 }
 
 export async function generateStaticParams() {
-  return [{ slug: midterm.slug }];
+  return essays.map(e => ({ slug: e.slug }));
 }

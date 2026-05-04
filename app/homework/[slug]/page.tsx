@@ -1,9 +1,10 @@
 import { notFound } from 'next/navigation';
 import { homeworks } from '@/data/homeworks';
 import { midtermPresentation } from '@/data/midtermPresentation';
+import { finalProjectPresentation } from '@/data/finalProjectPresentation';
 import HomeworkPageComponent from '@/components/HomeworkPage';
 
-const allSlidePages = [...homeworks, midtermPresentation];
+const allSlidePages = [...homeworks, midtermPresentation, finalProjectPresentation];
 
 interface PageProps {
   params: Promise<{ slug: string }>;

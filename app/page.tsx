@@ -7,12 +7,16 @@ import Footer from '@/components/Footer';
 import { homeworks } from '@/data/homeworks';
 import { midterm } from '@/data/midterm';
 import { midtermPresentation } from '@/data/midtermPresentation';
+import { finalProject } from '@/data/finalProject';
+import { finalProjectPresentation } from '@/data/finalProjectPresentation';
 import gsap from 'gsap';
 
 const allProjects = [
   ...homeworks.map(hw => ({ title: hw.title, slug: hw.slug, route: `/homework/${hw.slug}` })),
   { title: 'MIDTERM - ' + midterm.title, slug: midterm.slug, route: `/midterm/${midterm.slug}` },
   { title: 'MIDTERM PRESENTATION', slug: midtermPresentation.slug, route: `/homework/${midtermPresentation.slug}` },
+  { title: 'FINAL - ' + finalProject.title, slug: finalProject.slug, route: `/midterm/${finalProject.slug}` },
+  { title: 'FINAL PRESENTATION', slug: finalProjectPresentation.slug, route: `/homework/${finalProjectPresentation.slug}` },
 ];
 
 export default function Home() {
