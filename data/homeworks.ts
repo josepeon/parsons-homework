@@ -473,4 +473,60 @@ export const homeworks: Homework[] = [
       },
     ],
   },
+  {
+    id: '10',
+    title: 'CONSUMER RESEARCH',
+    week: 'WEEK 10',
+    slug: 'homework-10',
+    prompts: [
+      {
+        label: 'PROMPT 2 · FILTER TRAINING',
+        question: 'On either IG/TikTok or a website such as Amazon.com that promises personal recommendations for a taste-based product like books, movies, or fashion, observe your advertising algorithm. Observe how well the filter seems to know \'you\'. Does it offer any surprising recommendations or ones you would not have found on your own? What can go wrong to throw off the filter (like buying presents for others, searching for random things)? What do you see as the future for this technology?',
+        slides: [
+          {
+            title: 'THE FILTER KNOWS YOU',
+            content: 'I observed my TikTok For You Page over several weeks. The algorithm had mapped a specific aesthetic for me — technical, minimal, high-design menswear — and served Rick Owens, Lemaire, and Goldwin with unsettling precision. These were not brands I searched; they were inferred from dwell time, save behavior, and the 0.3 seconds I paused on a particular silhouette. The filter had reverse-engineered my taste faster than most stylists would, and occasionally surfaced brands I genuinely did not know but immediately wanted. That is the system working as intended: not just reflecting preferences back, but extending them into adjacent territory the user hasn\'t yet discovered.',
+            image: '/images/homework-10/slide-1.jpg',
+            aspectRatio: 960 / 1440,
+          },
+          {
+            title: 'NOISE IN THE SIGNAL',
+            content: 'The filter broke when I researched competitor brands for a client project at work. Within forty-eight hours, streetwear drops and fast fashion hauls were contaminating the feed. A single gift search for a family member injected weeks of irrelevant recommendations that still haven\'t fully cleared. The algorithm cannot distinguish between "I searched this" and "this is me." It treats all engagement as identity — a fundamental category error. The system has no model of context: it cannot know that a search is professional research or a present for someone else. Every action is logged as revelation of self, which means the filter is not learning who you are. It is learning the aggregate surface of everything you\'ve touched, which is a very different thing.',
+            image: '/images/homework-10/slide-2.jpg',
+            aspectRatio: 1567 / 638,
+          },
+          {
+            title: 'TOWARD BEHAVIORAL TASTE',
+            content: 'The next generation of recommendation will be contextual and behavioral rather than purely click-based. Systems will read not just what you engage with but how: dwell time patterns, the visual language you return to, the difference between browse behavior and purchase intent. Multi-modal AI will eventually parse aesthetic sensibility the way a great buyer does — through pattern, proportion, and instinct accumulated over thousands of observations. The risk is homogenization. When every feed mirrors its user perfectly, the algorithmic center of gravity pulls everyone toward a slightly different version of the same taste. The productive friction that used to come from encountering things you didn\'t choose — a magazine editor\'s opinion, a store buyer\'s instinct, a city you didn\'t expect — disappears. The filter gets better at who you are and worse at who you could become.',
+            image: '/images/homework-10/slide-3.jpg',
+            aspectRatio: 3456 / 4608,
+          },
+        ],
+      },
+      {
+        label: 'PROMPT 4 · RESEARCH REPORTS',
+        question: 'Locate a published report of a consumer segmentation study in marketing journals or apparel trade publications. Select a product category and analyze the connection between the types of people profiled in the study and that product category. Is the category likely to rise or fall in popularity? Is the market for the product category increasing or decreasing? Should the product category be repositioned to target a different consumer audience? Is this branch of fashion going at a different speed than others?',
+        slides: [
+          {
+            title: 'THE FIVE FASHION CONSUMERS',
+            content: 'The McKinsey & Company and Business of Fashion State of Fashion 2024 report segments global consumers into five archetypes: Pragmatists (utility-first, trend-agnostic), Fashionistas (trend-driven, brand-loyal), Value Hunters (price-conscious, discount-seeking), Careful Spenders (quality over quantity, deliberate purchasing), and Sustainably Minded shoppers (ethics and environment as primary filters). The Sustainably Minded segment — 25–30% of consumers in North America and Western Europe — will pay a meaningful premium for verified ethical production, but only when brand claims are specific and auditable. Aspiration and greenwashing language no longer convert. The report\'s key finding: no single archetype is growing faster than the others across all categories. The categories that are growing are the ones that serve multiple archetypes simultaneously.',
+            image: '/images/homework-10/slide-4.jpg',
+            aspectRatio: 3211 / 4816,
+          },
+          {
+            title: 'CATEGORY: PERFORMANCE OUTERWEAR',
+            content: 'Applied to performance outerwear — the Arc\'teryx, Goldwin, Patagonia tier — the McKinsey archetypes reveal an unusual overlap. The Fashionista and the Sustainably Minded consumer converge on this category with unusual density: both are drawn to materiality, technical specificity, and brand philosophy over seasonal trend. Arc\'teryx\'s lifetime repair program and Patagonia\'s Worn Wear initiative are credible enough to satisfy the Sustainably Minded segment while simultaneously signaling quality depth that the Careful Spender respects. The Fashionista is drawn by the Gorpcore aesthetic cycle. The category speaks across three of five archetypes simultaneously, which is why it has consistently outpaced adjacent fashion categories in revenue growth through the past five years. The Value Hunter is currently the one segment the category underserves.',
+            image: '/images/homework-10/slide-5.jpg',
+            aspectRatio: 4608 / 3072,
+          },
+          {
+            title: 'DEPTH OVER REPOSITIONING',
+            content: 'Performance outerwear does not need repositioning — it needs range. The Value Hunter wants technical function without the luxury identity markup: real waterproofing, real durability, no brand premium. The opportunity is not moving existing brands downmarket but creating an honest mid-tier: credible materials, real performance, transparent manufacturing cost. The category is moving faster than most — Gorpcore compressed roughly a decade of adoption into three years, pulling performance outerwear into fashion\'s core conversation rather than its outdoor periphery. The risk is that speed-of-trend adoption creates a ceiling: if the Fashionista archetype moves on, the category must retain the Careful Spender and Sustainably Minded consumer through product integrity rather than cultural moment. The category\'s best scenario is the one it is already in: a permanent crossover, held by the quality argument rather than the trend argument.',
+            image: '/images/homework-10/slide-6.jpg',
+            aspectRatio: 5489 / 3659,
+          },
+        ],
+      },
+    ],
+  },
 ];
